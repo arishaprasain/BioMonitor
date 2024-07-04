@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BioMonitor"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature:"
+        android:textSize="18sp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/temp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- °C"
+        android:textSize="18sp"
+        android:layout_below="@id/logo"
+        android:layout_toEndOf="@id/temp_label"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/oxygen_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oxygen Level:"
+        android:textSize="18sp"
+        android:layout_below="@id/temp_label"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/oxygen_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- %"
+        android:textSize="18sp"
+        android:layout_below="@id/temp_label"
+        android:layout_toEndOf="@id/oxygen_label"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/pulse_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulse:"
+        android:textSize="18sp"
+        android:layout_below="@id/oxygen_label"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/pulse_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- BPM"
+        android:textSize="18sp"
+        android:layout_below="@id/oxygen_label"
+        android:layout_toEndOf="@id/pulse_label"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/ecg_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECG:"
+        android:textSize="18sp"
+        android:layout_below="@id/pulse_label"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/ecg_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        android:layout_below="@id/pulse_label"
+        android:layout_toEndOf="@id/ecg_label"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Monitoring"
+        android:layout_below="@id/ecg_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+</RelativeLayout>
